@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto1</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔐</text></svg>">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Este es mi Proyecto1</h1>
+    </header>
+    <main>
+        <section class="container">
+          <div id="message">
+            <label for="message">Preguntas, ecribe tu nombre </label>
+            <textarea id="msg" name="textarea" maxlength="280" placeholder="Escribe o pega tu mensaje secreto aquí"></textarea>
+            <span id="counter">0/280</span>
+            <label for="offset">Tu usuario</label>
+            <input id="offset" type="number" min="-100" max="100" placeholder="Ingresa tu clave secreta aquí" name="offset" step="1">
+            <div class="btnGroup">
+              <button id="cipher" name="cipher" type="button">
+                <i class="fas fa-lock"></i> Cifrar
+              </button>
+              <button id="decipher" name="decipher" type="button">
+                <i class="fas fa-lock-open"></i> Descifrar
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="modalContainer containerClose">
+          <div id="messageResult" class="modal modalClose">
+            <p id="close"><i class="fas fa-times"></i></p>
+            <label for="messageResult" id="lblMsgResult">Su mensaje es</label>
+            <textarea id="msgResult" name="textarea" readonly=""></textarea>
+            <button id="copy" name="copy" type="button">
+              <i class="fas fa-copy"></i> Copiar
+            </button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>	© Todos los derechos reservados a Lara</p>
+      </footer>
+      <script src="index.js" type="module"></script>
+</body>
+</html>

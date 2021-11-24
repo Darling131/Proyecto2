@@ -1,0 +1,28 @@
+element.style
+* {
+    box-sizing: border-box;
+}
+script {
+    display: none;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font-main);
+    background: var(--color-gradient), url(assets/letters.gif) no-repeat center center fixed;
+    background-size: cover;
+    color: var(--color-white);
+}
+:root {
+    --color-main: rgba(33, 23, 82);
+    --color-secondary: rgba(20, 209, 143);
+    --color-placeholder-main: #D3CCE3;
+    --color-placeholder-secondary: #E9E4F0;
+    --color-white: #fff;
+    --color-gradient: linear-gradient( 91.7deg, rgba(50,25,79,0.75) -4.3%, rgba(33, 23, 82,0.75) 101.8% );
+    --font-main: 'Comfortaa', cursive;
+    --font-secondary: 'Roboto', sans-serif;
+}
